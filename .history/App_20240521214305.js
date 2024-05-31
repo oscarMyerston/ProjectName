@@ -12,15 +12,13 @@ import {
   SafeAreaView,
 } from 'react-native';
 import { Chair as BlackChair} from './Chair';
-import Table from "./Table"
-
+import { Table } from
 const App = ()  => {
 
   return (
     <SafeAreaView>
       <View>
         <BlackChair></BlackChair>
-        <Table></Table>
       </View>
     </SafeAreaView>
   );

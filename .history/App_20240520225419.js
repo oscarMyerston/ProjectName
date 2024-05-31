@@ -9,18 +9,15 @@
 import React from 'react';
 import {
   View,
-  SafeAreaView,
 } from 'react-native';
-import { Chair as BlackChair} from './Chair';
-import Table from "./Table"
+import Chair from './Chair';
 
 const App = ()  => {
 
   return (
     <SafeAreaView>
       <View>
-        <BlackChair></BlackChair>
-        <Table></Table>
+        <Chair></Chair>
       </View>
     </SafeAreaView>
   );
