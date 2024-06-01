@@ -6,51 +6,34 @@
  * @flow strict-local
  */
 
-import React, { useState } from 'react';
+import React from 'react';
 import {
   View,
   Text,
   SafeAreaView,
-  StyleSheet
 } from 'react-native';
 import { Chair as BlackChair} from './Chair';
 import Table from "./Table"
 
 const App = ()  => {
-  const [ theme, setTheme ] = useState('light')
+
   return (
     <SafeAreaView>
 
       <Text 
-      style={styles.themeHeader}
-      onPress={() => setTheme('dark')}
+      style={ {margin:16, fontSize: 16} }
+      onPress={() => SVGTextPathElement}
       >Make Theme Dark</Text>
 
       <View>
         {/* Chair */}
-        <BlackChair theme={theme}/>
+        <BlackChair></BlackChair>
         
         {/* Table */}
-        <Table/>
+        <Table></Table>
       </View>
     </SafeAreaView>
   );
 };
-
-const styles = {
-  themeHeader: {
-    margin: 16,
-    fontSize: 16,
-    backgroundColor: 'yellow'
-  }
-}
-
-// const styles = StyleSheet.create({
-//   themeHeader: {
-//     margin: 16,
-//     fontSize: 16,
-//     backgroundColor: 'yellow'
-//   }
-// })
 
 export default App;

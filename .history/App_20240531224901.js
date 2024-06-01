@@ -17,7 +17,7 @@ import { Chair as BlackChair} from './Chair';
 import Table from "./Table"
 
 const App = ()  => {
-  const [ theme, setTheme ] = useState('light')
+  const [theme, setTheme] = useState('light')
   return (
     <SafeAreaView>
 
@@ -37,7 +37,7 @@ const App = ()  => {
   );
 };
 
-const styles = {
+const styles = StyleSheet.create({
   themeHeader: {
     margin: 16,
     fontSize: 16,

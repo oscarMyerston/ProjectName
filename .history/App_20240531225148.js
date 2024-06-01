@@ -17,7 +17,7 @@ import { Chair as BlackChair} from './Chair';
 import Table from "./Table"
 
 const App = ()  => {
-  const [ theme, setTheme ] = useState('light')
+  const [ theme, setTheme] = useState('light')
   return (
     <SafeAreaView>
 

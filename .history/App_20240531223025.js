@@ -11,18 +11,17 @@ import {
   View,
   Text,
   SafeAreaView,
-  StyleSheet
 } from 'react-native';
 import { Chair as BlackChair} from './Chair';
 import Table from "./Table"
 
 const App = ()  => {
-  const [ theme, setTheme ] = useState('light')
+  const [theme, setTheme] = useState('light')
   return (
     <SafeAreaView>
 
       <Text 
-      style={styles.themeHeader}
+      style={ {margin:16, fontSize: 16} }
       onPress={() => setTheme('dark')}
       >Make Theme Dark</Text>
 
@@ -36,21 +35,5 @@ const App = ()  => {
     </SafeAreaView>
   );
 };
-
-const styles = {
-  themeHeader: {
-    margin: 16,
-    fontSize: 16,
-    backgroundColor: 'yellow'
-  }
-}
-
-// const styles = StyleSheet.create({
-//   themeHeader: {
-//     margin: 16,
-//     fontSize: 16,
-//     backgroundColor: 'yellow'
-//   }
-// })
 
 export default App;

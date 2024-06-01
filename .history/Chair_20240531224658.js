@@ -18,7 +18,8 @@ const Chair = ( {theme} ) => {
 
   return (
     <Text
-      style={{ fontSize: isBig ? 24 : 14, color: theme === 'dark'  ? 'grey' : 'purple' }}
+      style={{ fontSize: isBig ? 24 : 14, 
+      color: theme === 'dark'  ? 'grey' : 'purple' }}
       onPress={changeState} 
     >This is chair</Text>
   )
