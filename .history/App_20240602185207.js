@@ -9,6 +9,7 @@
 import React, { useState } from 'react';
 import {
   SafeAreaView,
+  StyleSheet
 } from 'react-native';
 import { Chair as BlackChair} from './Chair';
 import Table from "./Table"
@@ -18,6 +19,7 @@ const App = ()  => {
   const [ theme, setTheme ] = useState('light')
   return (
     <SafeAreaView>
+     
     <Splash/>
     </SafeAreaView>
   );

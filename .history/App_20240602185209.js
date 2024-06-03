@@ -18,6 +18,7 @@ const App = ()  => {
   const [ theme, setTheme ] = useState('light')
   return (
     <SafeAreaView>
+     
     <Splash/>
     </SafeAreaView>
   );

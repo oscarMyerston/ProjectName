@@ -8,17 +8,31 @@
 
 import React, { useState } from 'react';
 import {
+  View,
+  Text,
   SafeAreaView,
+  StyleSheet
 } from 'react-native';
 import { Chair as BlackChair} from './Chair';
 import Table from "./Table"
-import Splash from './src/screen/auth/Splash';
 
 const App = ()  => {
   const [ theme, setTheme ] = useState('light')
   return (
     <SafeAreaView>
-    <Splash/>
+
+      <Text 
+      style={styles.themeHeader}
+      onPress={() => setTheme('dark')}
+      >Make Theme Dark</Text>
+
+      {/* <View>
+        {/* Chair */}
+        <BlackChair theme={theme}/>
+        
+        {/* Table */}
+        <Table/>
+      </View> */}
     </SafeAreaView>
   );
 };
