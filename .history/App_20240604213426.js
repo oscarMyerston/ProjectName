@@ -10,6 +10,7 @@ import React, { useState } from 'react';
 import {
   SafeAreaView,
 } from 'react-native';
+import { Chair as BlackChair} from './Chair';
 import Signup from './src/screen/auth/Signup';
 
 const App = ()  => {

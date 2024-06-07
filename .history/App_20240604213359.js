@@ -10,13 +10,16 @@ import React, { useState } from 'react';
 import {
   SafeAreaView,
 } from 'react-native';
-import Signup from './src/screen/auth/Signup';
+import { Chair as BlackChair} from './Chair';
+import Table from "./Table"
+import Splash from './src/screen/auth/Splash';
 
 const App = ()  => {
   const [ theme, setTheme ] = useState('light')
   return (
     <SafeAreaView>
-    <Signup/>
+    <Splash/>
+    
     </SafeAreaView>
   );
 };
